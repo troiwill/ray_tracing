@@ -40,7 +40,7 @@ In addition, it comes with Python bindings via [pybind11](https://pybind11.readt
     ```bash
     git clone https://github.com/acschaefer/ray_tracing.git
     mkdir ray_tracing/build && cd ray_tracing/build
-    cmake ..
+    cmake .. -DPYTHON_EXECUTABLE=$(which python)
     make -j8
     sudo make install
     ```
